@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   standalone: true,
@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.scss']
 })
-export class HeroesComponent {
-  hero = "Windstorm";
+export class HeroesComponent implements OnInit {
+  hero: string = "Windstorm";
+
+  @Input() inputFromParent: string = "";
+  constructor() { }
+  ngOnInit(): void {
+  }
 }
