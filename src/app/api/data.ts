@@ -1,6 +1,6 @@
-import { HousingLocation } from "../interface/housing-location";
+import { HousingLocation } from '../interface/housing-location';
 
-let housingLocations: HousingLocation[] = [
+export const housingLocations: HousingLocation[] = [
   { id: 1, city: 'New York', wifi: true },
   { id: 2, city: 'Los Angeles', wifi: false },
   { id: 3, city: 'Chicago', wifi: true },

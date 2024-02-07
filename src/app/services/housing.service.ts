@@ -1,18 +1,15 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { HousingLocation } from "../interface/housing-location";
+import { housingLocations } from "../api/data";
 
 @Injectable({
   providedIn: 'root'
 })
 export class HousingService {
-
-  private housingSubject = new BehaviorSubject <HousingLocation> ({ id: 1, city: 'New York', wifi: true });
-  public housingContent = this.housingSubject.asObservable();
-
   constructor() { }
 
-  getData(data: any) {
-    this.housingSubject.next(data);
+  getData(): HousingLocation[] {
+    return housingLocations;
   }
 }
