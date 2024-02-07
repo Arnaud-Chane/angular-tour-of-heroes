@@ -10,5 +10,7 @@ import { HeroesComponent } from './heroes/heroes.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Arnaud';
+  title: string = 'Arnaud';
+  forParent: string = "This is for parent";
+  forChild: string = "This is for child";
 }
