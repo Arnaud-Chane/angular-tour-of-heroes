@@ -2,11 +2,11 @@ import { Component, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeroesComponent } from './heroes/heroes.component';
 import { VilainsComponent } from './vilains/vilains.component';
-
+import { HouseLocationComponent } from './house-location/house-location.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeroesComponent, VilainsComponent],
+  imports: [RouterOutlet, HeroesComponent, VilainsComponent, HouseLocationComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
