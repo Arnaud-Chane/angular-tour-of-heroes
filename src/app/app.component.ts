@@ -13,4 +13,8 @@ export class AppComponent {
   title: string = 'Arnaud';
   forParent: string = "This is for parent";
   forChild: string = "This is for child";
+
+  GetData(text: string) {
+    this.forParent = text;
+  }
 }
