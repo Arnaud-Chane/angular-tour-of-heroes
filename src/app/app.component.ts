@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeroesComponent } from './heroes/heroes.component';
 
@@ -16,5 +16,10 @@ export class AppComponent {
 
   GetData(text: string) {
     this.forParent = text;
+  }
+
+  @ViewChild(HeroesComponent) textFromChild: any;
+  GettingData() {
+    this.forParent = this.textFromChild.textToParent;
   }
 }
