@@ -1,3 +1,10 @@
+<!-- <h1>{{title}}</h1>
+<p>{{forParent}}</p>
+<app-heroes [inputFromParent]="forChild" (updatedText)="GetData($event)"></app-heroes> -->
+
+
 <h1>{{title}}</h1>
 <p>{{forParent}}</p>
-<app-heroes [inputFromParent]="forChild" (updatedText)="GetData($event)"></app-heroes>
+<app-heroes></app-heroes>
+<br >
+<button type="button" (click)="GettingData()">Get Data from Child</button>
